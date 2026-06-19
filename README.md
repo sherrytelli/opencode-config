@@ -1,3 +1,11 @@
+# OpenCode Setup Instructions
+
+To set up OpenCode with the provided configuration, follow these steps:
+
+1. **Create a file** named `~/.config/opencode/opencode.json`.
+2. **Paste the following JSON configuration in the opencode.json file:**
+
+```json
 {
   "$schema": "https://opencode.ai/config.json",
   "provider": {
@@ -27,7 +35,7 @@
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
       "headers": {
-        "CONTEXT7_API_KEY": "YOUR_API_KEY"
+        "CONTEXT7_API_KEY": "API_KEY"
       },
       "enabled": true
     },
@@ -49,3 +57,9 @@
     }
   }
 }
+```
+
+3. **Ensure you have the required dependencies installed**, such as `@ai-sdk/openai-compatible` and 
+`Llama.cpp`.
+
+4. **Run the setup script** (if provided) to initialize OpenCode with your configuration.
